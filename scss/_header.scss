@@ -1,0 +1,155 @@
+// MARVEL BATTLEAPP
+// HEADER STYLING
+
+#header-bar {
+	height: auto;
+	width: 100%;
+	padding: 4%;
+	box-sizing: border-box;
+	font-family: Cinzel;
+	font-weight: 400;
+
+	@media screen and (min-width: 800px) {
+		padding: 4% 10%;
+	}
+
+	#header-logo {
+		height: auto;
+		width: 40%;
+		margin: 0% auto;
+		margin-bottom: 4%;
+		display: block;
+
+		@media screen and (min-width: 800px) {
+			height: 76px;
+			width: auto;
+			display: inline-block;
+			vertical-align: middle;
+			margin-bottom: 0%;
+		}
+
+		img {
+			height: auto;
+			width: 100%;
+			display: block;
+
+			@media screen and (min-width: 800px) {
+				height: 76px;
+				width: auto;
+				display: block;
+			}
+		}
+	}
+
+	#header-nav {
+		height: auto;
+		width: 70%;
+		display: block;
+		margin: 0% auto;
+
+		@media screen and (min-width: 800px) {
+			width: 78% !important;
+			display: inline-block;
+			float: right;
+		}
+
+		.show-menu {
+			height: auto;
+			width: 100%;
+			display: block;
+			padding: 3% 6%;
+			box-sizing: border-box;
+			background-color: $marvel-bluegray;
+			border: 1px solid $marvel-bluegray-dark;
+			font-size: 1.00em;
+			font-weight: 400;
+			letter-spacing: 1.50px;
+			color: $marvel-white;
+			text-align: center;
+
+			&:hover {
+				background-color: $marvel-bluegray-light;
+				cursor: pointer;
+			}
+
+			@media screen and (min-width: 800px) {
+				display: none;
+			}
+		}
+
+		input[type="checkbox"] {
+			display: none;
+
+			&:checked ~ #header-menu {
+				display: block;
+			}
+		}
+	}
+
+	#header-menu {
+		height: auto;
+		width: 100%;
+		list-style: none;
+		text-align: center;
+		display: none;
+
+		@media screen and (min-width: 800px) {
+			height: 76px;
+			width: auto;
+			display: block !important;
+			vertical-align: middle;
+			text-align: right;
+		}
+
+		li {
+			display: block;
+
+			@media screen and (min-width: 800px) {
+				display: inline-block;
+				margin-right: 1%;
+
+				&:last-child {
+					margin-right: 0%;
+				}
+			}
+
+			a {
+				height: auto;
+				width: 100%;
+				background-color: $marvel-bluegray;
+				border-bottom: 1px solid $marvel-bluegray-dark;
+				padding: 3% 0%;
+				display: block;
+				font-size: 1.00em;
+				font-weight: 400;
+				color: $marvel-white;
+				letter-spacing: 1.50px;
+
+				&:hover {
+					background-color: $marvel-bluegray-light;
+				}
+
+				@media screen and (min-width: 800px) {
+					height: 76px;
+					width: auto !important;
+					background-color: transparent;
+					border-bottom: none;
+					border: 1px solid $marvel-bluegray;
+					padding: 24px 18px;
+					box-sizing: border-box;
+					display: inline-block;
+					font-size: 1.00em;
+					font-weight: 400;
+					text-align: center;
+					color: $marvel-bluegray;
+					letter-spacing: 1.50px;
+
+					&:hover {
+						background-color: $marvel-bluegray;
+						color: $marvel-white;
+					}
+				}
+			}
+		}
+	}
+}

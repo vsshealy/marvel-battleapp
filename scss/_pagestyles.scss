@@ -1,59 +1,48 @@
-// PAGE TEMPLATE SITE
+// MARVEL BATTLEAPP
 // PAGE STYLING
 
-* {
-	margin: 0%;
-	padding: 0%;
-
-	@media screen and (min-width: 400px) {}
-	@media screen and (min-width: 600px) {}
-	@media screen and (min-width: 800px) {}
-	@media screen and (min-width: 1000px) {}
-	@media screen and (min-width: 1200px) {}
-}
-
-html {
+.page-banner-parent {
 	height: auto;
-	width: 100vw;
-
-	@media screen and (min-width: 400px) {}
-	@media screen and (min-width: 600px) {}
-	@media screen and (min-width: 800px) {}
-	@media screen and (min-width: 1000px) {}
-	@media screen and (min-width: 1200px) {}
+	width: 100%;
+	display: block;
 }
 
-body {
-	@media screen and (min-width: 400px) {}
-	@media screen and (min-width: 600px) {}
-	@media screen and (min-width: 800px) {}
-	@media screen and (min-width: 1000px) {}
-	@media screen and (min-width: 1200px) {}
-}
-
-#content-wrapper {
+.button {
 	height: auto;
 	width: auto;
+	display: block;
+	padding: 2% 0%;
+	box-sizing: border-box;
+	background-color: transparent;
+	border: 1px solid $marvel-bluegray;
+	font-family: Cinzel;
+	font-weight: 400;
+	font-size: 1.00em;
+	text-align: center;
+	color: $marvel-bluegray;
 
-	@media screen and (min-width: 400px) {}
-	@media screen and (min-width: 600px) {}
-	@media screen and (min-width: 800px) {}
-	@media screen and (min-width: 1000px) {}
-	@media screen and (min-width: 1200px) {}
-}
-
-.clearfix {
-	zoom: 1;
-
-	&:before, &:after {
-		content: "";
-		display: table;
-	}
-	&:after {
-		clear: both;
+	&:hover {
+		background-color: $marvel-bluegray;
+		color: $marvel-white;
 	}
 }
 
-.clear {
-	clear: both;
+.textbanner-blue {
+	height: auto;
+	width: 100%;
+	display: block;
+	padding: 4%;
+	box-sizing: border-box;
+	background-color: $marvel-bluegray;
+	text-align: center;
+	color: $marvel-white;
+}
+
+a {
+	img {
+		&:hover {
+			background-color: $marvel-white;
+			opacity: 0.80;
+		}
+	}
 }

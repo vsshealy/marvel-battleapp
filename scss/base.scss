@@ -1,12 +1,22 @@
-// PAGE TEMPLATE SITE
+// MARVEL BATTLEAPP
 // BASE IMPORT FILE
+
+// BASE IMPORTS
+@import "colors";
+@import "grid12";
+@import "text";
+@import "global";
 
 // TEMPLATE IMPORTS
 @import "pagestyles";
-@import "grid12";
 @import "devices";
 
-// CUSTOM SITE IMPORTS
-@import "global";
-@import "text";
-@import "colors";
+// GLOBAL PAGE STYLES
+@import "header";
+@import "footer";
+
+// INDIVIDUAL PAGE STYLES
+@import "dashboard";
+@import "search";
+@import "characterdetail";
+@import "battle";

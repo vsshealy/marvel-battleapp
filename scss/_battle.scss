@@ -1,0 +1,271 @@
+// MARVEL BATTLE APP
+// BATTLE SCENE STYLING
+
+.page-banner-parent {
+	height: auto;
+	width: 80%;
+	margin: 0% auto;
+	padding: 4% 0%;
+	box-sizing: border-box;
+
+	h1 {
+		text-align: center;
+
+		@media screen and (min-width: 800px) {
+			font-size: 3.50em;
+		}
+	}
+}
+
+.battle-scene {
+	height: auto;
+	width: 100%;
+	display: block;
+	margin-bottom: 4%;
+	background-color: $design-grayscale16;
+	border-top: 10px solid $marvel-red;
+	box-sizing: border-box;
+	background-color: #333333;
+
+	.players-panel {
+		height: auto;
+		width: 100%;
+		display: block;
+
+		.player-card {
+			height: 200px;
+			width: 50%;
+			display: inline-block;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			box-sizing: border-box;
+			float: left;
+
+			&:first-child {
+				border-right: 1px solid $marvel-white;
+			}
+
+			&:last-child {
+				border-left: 1px solid $marvel-white;
+			}
+			@media screen and (min-width: 800px) {
+				height: 300px;
+			}
+		}
+	}
+
+	.battle-scene-footer {
+		height: auto;
+		width: 100%;
+		display: block;
+		background-color: $marvel-bluegray;
+		padding: 2% 10%;
+		box-sizing: border-box;
+	}
+}
+
+.battlelog-frame {
+	height: auto;
+	width: 80%;
+	margin: 0% auto;
+	margin-bottom: 4%;
+
+	.character-names {
+		margin-bottom: 4%;
+	}
+
+	.player-name {
+		height: auto;
+		width: 50%;
+		display: inline-block;
+
+		&:first-child {
+			float: left;
+		}
+
+		&:last-child {
+			text-align: right;
+			float: right;
+		}
+	}
+
+	.matchup-radargraph, .battlelog-results {
+		height: auto;
+		width: 90%;
+		margin: 0% auto;
+		background-color: $marvel-white;
+		border: 1px solid $marvel-bluegray;
+		padding: 4%;
+
+		img {
+			height: auto;
+			width: 100%;
+		}
+
+		ul {
+			list-style: none;
+
+			li {
+				margin-bottom: 4%;
+			}
+		}
+	}
+}
+
+#battle-select {
+	.player-card {
+		&:first-child {
+			background-image: url("https://i.annihil.us/u/prod/marvel/i/mg/c/60/55b6a28ef24fa.jpg");
+		}
+		&:last-child {
+			background-image: url("http://i.annihil.us/u/prod/marvel/i/mg/9/30/537bb3f94d3b0.jpg");
+		}
+	}
+
+	.battle-scene-footer {
+		.battle-scene-search {
+			height: auto;
+			width: 50%;
+			display: inline-block;
+			float: left;
+
+			&:first-child {
+				text-align: left;
+
+				input[type="submit"] {
+					margin-right: 4%;
+
+					&:last-child {
+						margin: 0%;
+					}
+				}
+			}
+
+			&:last-child {
+				text-align: right;
+
+				input[type="text"] {
+					float: right;
+				}
+
+				input[type="submit"] {
+					margin-left: 4%;
+					float: right;
+
+					&:last-child {
+						margin: 0%;
+					}
+				}
+			}
+
+			input[type="text"] {
+				height: auto;
+				width: 90%;
+				margin-bottom: 4%;
+				display: block;
+				padding: 1% 2%;
+				box-sizing: border-box;
+				font-size: 0.70em;
+			}
+
+			input[type="submit"] {
+				height: auto;
+				width: 90%;
+				display: block;
+				margin-bottom: 2%;
+				padding: 1% 2%;
+				box-sizing: border-box;
+				border: 1px solid $marvel-white;
+				background-color: transparent;
+				font-family: Cinzel;
+				font-size: 1.00em;
+				text-align: center;
+				color: $marvel-white;
+
+				&:hover {
+					background-color: $marvel-bluegray-dark;
+					cursor: pointer;
+				}
+
+				@media screen and (min-width: 800px) {
+					width: 40%;
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	.battleground-buttons {
+		height: auto;
+		width: 100%;
+		margin: 0% auto;
+		margin-bottom: 8%;
+
+		.button {
+			background-color: $marvel-red;
+			margin-bottom: 2%;
+			color: $marvel-white;
+
+			&:hover {
+				background-color: $marvel-red-light;
+			}
+
+			@media screen and (min-width: 800px) {
+				height: auto;
+				width: 45%;
+				display: inline-block;
+				margin-right: 9%;
+				margin-bottom: 0%;
+
+				&:last-child {
+					margin: 0%;
+				}
+			}
+		}
+	}
+}
+
+#battle-view, #battle-results {
+	.player-card {
+		&:first-child {
+			background-image: url("https://i.annihil.us/u/prod/marvel/i/mg/c/60/55b6a28ef24fa.jpg");
+		}
+
+		&:last-child {
+			background-image: url("http://i.annihil.us/u/prod/marvel/i/mg/9/30/537bb3f94d3b0.jpg");
+		}
+	}
+
+	.battle-scene-footer {
+		.button {
+			height: auto;
+			width: 50%;
+			display: block;
+			margin: 0% auto;
+			padding: 1% 0%;
+			box-sizing: border-box;
+			background-color: $marvel-red;
+			border: 1px solid $marvel-white;
+			font-family: Cinzel;
+			font-weight: 400;
+			font-size: 1.00em;
+			text-align: center;
+			color: $marvel-white;
+
+			&:hover {
+				background-color: $marvel-red-light;
+			}
+		}
+	}
+}
+
+#battle-results {
+	.character-names {
+		.player-name {
+			h4 {
+				color: $marvel-red;
+			}
+		}
+	}
+}

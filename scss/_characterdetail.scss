@@ -1,0 +1,116 @@
+// MARVEL BATTLEAPP
+// CHARACTER DETAIL STYLING
+
+#character-detail {
+	.page-banner-parent {
+		height: auto;
+		width: 80%;
+		margin: 0% auto;
+		padding: 4% 0%;
+		box-sizing: border-box;
+
+		.character-description {
+			height: auto;
+			width: 100%;
+			display: block;
+
+			@media screen and (min-width: 800px) {
+				width: 70%;
+				display: inline-block;
+				float: left;
+			}
+
+			h1 {
+				margin-bottom: 4%;
+
+				@media screen and (min-width: 800px) {
+					text-align: left;
+				}
+			}
+		}
+
+		.character-summary {
+			height: auto;
+			width: 100%;
+			display: block;
+
+			@media screen and (min-width: 800px) {
+				width: 30%;
+				display: inline-block;
+				padding-left: 2%;
+				box-sizing: border-box;
+				float: right;
+			}
+
+			.ultimate-score {
+				background-color: $marvel-red;
+				padding: 5%;
+				box-sizing: border-box;
+				margin-bottom: 4%;
+
+				@media screen and (min-width: 800px) {
+					margin-bottom: 8%;
+				}
+
+				h1 {
+					font-family: Roboto, Helvetica, Arial, sans-serif;
+					color: $marvel-white;
+					text-align: center;
+
+					@media screen and (min-width: 800px) {
+						font-size: 3.00em;
+					}
+				}
+
+				h4 {
+					font-family: Roboto, Helvetica, Arial, sans-serif;
+					font-weight: 300;
+					color: $marvel-white;
+					text-align: center;
+					text-transform: uppercase;
+
+					@media screen and (min-width: 800px) {
+						font-size: 1.00em;
+					}
+				}
+			}
+		}
+	}
+
+	.hero-banner {
+		background-color: #ff00ff;
+		height: auto;
+		width: 100%;
+
+		img {
+			height: auto;
+			width: 100%;
+			display: block;
+		}
+	}
+
+	.character-stats {
+		height: auto;
+		width: 80%;
+		margin: 4% auto;
+
+		h1 {
+			margin-bottom: 4%;
+		}
+
+		.character-radargraph {
+			height: auto;
+			width: 100%;
+			padding: 4%;
+			box-sizing: border-box;
+			background-color: $marvel-white;
+			border: 1px solid $marvel-bluegray;
+
+			img {
+				height: auto;
+				width: 100%;
+				display: block;
+			}
+		}
+	}
+}
